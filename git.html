@@ -56,12 +56,13 @@
     <a
         href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address">Setting
         your commit email address</a>
-    <code>$ git config --global user.email "email@example.com"</code>
-    <code>
-        $ git config --global user.email<br>email@example.com
+    <code>$ git config --global user.email "email@example.com"<br>
+        $ git config --global user.email<br>> email@example.com
     </code>
+    <hr>
     <div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/tMDbJ0DDuug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tMDbJ0DDuug" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
     <hr>
     <h1>How to Backtrack</h1>
@@ -70,6 +71,18 @@
     <hr>
     <h2>Restore file in working directory from last commit</h2>
     <code>git checkout HEAD filename</code>
+    <hr>
+    <h2>Add many files to the staging area</h2>
+    <code>git add filename1 filename2</code>
+    <hr>
+    <h2>Unstaging a file from staging area</h2>
+    <code>git reset HEAD filename</code>
+    <hr>
+    <h2>Reset to a previous HEAD revision</h2>
+    <code>git reset commit_SHA</code>
+    <hr>
+    
+
 
 
 

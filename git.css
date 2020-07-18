@@ -8,6 +8,16 @@
 	--bg-secondary: #141418;
 }
 
+::-moz-selection {
+	color: #e0ebeb;
+    background: rgb(255, 128, 128);
+}
+
+::selection {
+	color: #e0ebeb;
+    background: rgb(255, 128, 128);
+}
+
 html {
     display: grid;
     justify-content: center;
@@ -46,6 +56,19 @@ code {
     text-align: left;
 
     background-color: black;
+}
+
+a {
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	color: #46596d;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #b30047;
 }
 
 iframe {
