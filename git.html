@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./git.css">
 </head>
 
 <body>
     <h1>Learn Git</h1>
     <h2>Initializing a Git Repository</h2>
-    <code>cd /home</code>
-    <code>git init</code>
+    <code>cd /home<br>git init</code>
+    <hr>
     <h2>Checking the Status of a Git Repository</h2>
     <code>git status</code>
+    <hr>
     <h2>Adding a file to the staging area in Git</h2>
     <code>git add filename</code>
+    <hr>
     <h2>Checking the differences between the working directory and the staging area</h2>
     <code>git diff filename</code>
+    <hr>
     <h2>Storing changes from the staging area inside the repository</h2>
     <code>git commit filename</code>
     <p>Standard Conventions for Commit Messages:</p>
@@ -26,6 +30,7 @@
         <li>Written in the present tense</li>
         <li>Should be brief (50 characters or less) when using -m</li>
     </ul>
+    <hr>
     <h2>View commit history</h2>
     <code>git log</code>
     <p>Output:</p>
@@ -37,11 +42,37 @@
     </ul>
     <hr>
     <h1>Getting Started with Git and GitHub</h1>
-    <h2></h2>
     <code>git --version</code>
+    <hr>
     <h2>Setup Git</h2>
-    <a href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address">Setting your commit email address</a>
     <a href="https://docs.github.com/en/github/getting-started-with-github/set-up-git">Set up Git</a>
+    <hr>
+    <h2>Setting your username in Git</h2>
+    <a href="https://docs.github.com/en/github/using-git/setting-your-username-in-git">Setting your username in Git</a>
+    <code>$ git config --global user.name "Mona Lisa"</code>
+    <code>$ git config --global user.name<br>> Mona Lisa</code>
+    <hr>
+    <h2>Setting your commit email address</h2>
+    <a
+        href="https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/setting-your-commit-email-address">Setting
+        your commit email address</a>
+    <code>$ git config --global user.email "email@example.com"</code>
+    <code>
+        $ git config --global user.email<br>email@example.com
+    </code>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tMDbJ0DDuug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr>
+    <h1>How to Backtrack</h1>
+    <h2>HEAD commit</h2>
+    <code>git show HEAD</code>
+    <hr>
+    <h2>Restore file in working directory from last commit</h2>
+    <code>git checkout HEAD filename</code>
+
+
+
 </body>
 
 </html>

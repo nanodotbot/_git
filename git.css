@@ -1,3 +1,60 @@
-* {
+:root {
+	font-size: 16px;
+	font-family: 'Nunito', 'Calibri Light', Calibri, sans-serif;
+
+	--text-primary: #b6b6b6;
+	--text-secondary: #e2ecec;
+	--bg-primary: #23232e;
+	--bg-secondary: #141418;
+}
+
+html {
     display: grid;
+    justify-content: center;
+}
+
+* {
+	font-family: 'Nunito', 'Calibri Light', Calibri, sans-serif;
+    
+    box-sizing: border-box;    
+}
+
+div, h1, h2, p, code, a {    
+    display: grid;
+
+    max-width: 700px;
+    min-width: 0px;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+div {
+    justify-content: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+code {
+    padding: 10px;
+
+    font-family: 'Mono Sans';
+    color: aliceblue;
+    text-align: left;
+
+    background-color: black;
+}
+
+iframe {
+    display: grid;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    color: gray;
 }
