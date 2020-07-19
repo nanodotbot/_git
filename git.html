@@ -11,16 +11,18 @@
 <body>
     <h1>Learn Git</h1>
     <h2>Initializing a Git Repository</h2>
-    <code>cd /home<br>git init</code>
+    <code>cd /directory<br>git init</code>
     <hr>
     <h2>Checking the Status of a Git Repository</h2>
     <code>git status</code>
     <hr>
-    <h2>Adding a file to the staging area in Git</h2>
+    <h2>Adding files to the staging area in Git</h2>
     <code>git add filename</code>
+    <code>git add .</code>
     <hr>
     <h2>Checking the differences between the working directory and the staging area</h2>
     <code>git diff filename</code>
+    <code>git diff</code>
     <hr>
     <h2>Storing changes from the staging area inside the repository</h2>
     <code>git commit filename</code>
@@ -77,13 +79,15 @@
     <hr>
     <h2>Unstaging a file from staging area</h2>
     <code>git reset HEAD filename</code>
+    <code>git reset -- filename</code>
+    <code>git reset -- *</code>
     <hr>
     <h2>Reset to a previous HEAD revision</h2>
-    <code>git reset commit_SHA</code>
+    <code>git log<br>git reset commit_SHA<br>git log</code>
+    <div>
+        <img src="git-diagram-3.svg" alt="git reset commit_SHA">
+    </div>
     <hr>
-    
-
-
 
 
 </body>

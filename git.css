@@ -75,6 +75,12 @@ iframe {
     display: grid;
 }
 
+img {
+    display: grid;
+    width: 560px;
+    background-color: black;
+}
+
 hr {
     margin-top: 20px;
     margin-bottom: 50px;
