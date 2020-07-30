@@ -10,6 +10,7 @@
 
 <body>
     <h1>Learn Git</h1>
+    <hr>
     <h2>Initializing a Git Repository</h2>
     <code>cd /directory<br>git init</code>
     <hr>
@@ -86,6 +87,7 @@
     </div>
     <hr>
     <h1>How to Backtrack</h1>
+    <hr>
     <h2>HEAD commit</h2>
     <code>git show HEAD</code>
     <hr>
@@ -102,6 +104,41 @@
     <div>
         <img src="git-diagram-3.svg" alt="git reset commit_SHA">
     </div>
+    <hr>
+    <h1>Branching</h1>
+    <div>
+        <img src="./git-diagram-1.svg" alt="git branching">
+    </div>
+    <hr>
+    <h2>Checking branches</h2>
+    <code>git branch</code>
+    <hr>
+    <h2>Creating a new branch</h2>
+    <code>git branch new-kittens<br>git branch</code>
+    <hr>
+    <h2>Switch to the new branch</h2>
+    <code>git checkout new-kittens</code>
+    <hr>
+    <h2>Work on the new branch</h2>
+    <p>as usual, without impact on master</p>
+    <hr>
+    <h2>Including changes from branch in master</h2>
+    <code>git checkout master<br>merge new-kittens</code>
+    <hr>
+    <h2>Merge conflict</h2>
+    <p>change both branches in any way</p>
+    <p>add and commit both</p>
+    <p>trying to merge new-kittens into master results in a conflict</p>
+    <code>CONFLICT (content): Merge conflict in kitten.txt<br>Automatic merge failed; fix conflicts and then commit the result.</code>
+    <p>manually delete the unwanted version and delete all of git's markings includion HEAD, new-kittens, >>>>>>> and =======</p>
+    <p>if there is some kind of inconsistency in the staging area that can't be solved by git add, which makes git commit fail. Adding -i would tell git to add and commit at the same time</p>
+    <code>git commit -i kitten.txt -m 'solving conflict'</code>
+    <hr>
+    <h2>Deleting a branch</h2>
+    <code>git branch -d new-kittens</code>
+    <hr>
+    <h1>Just some additional references</h1>
+    <a href="https://www.datacamp.com/community/tutorials/git-push-pull">Git summary @ Datacamp.com</a>
     <hr>
 
 
